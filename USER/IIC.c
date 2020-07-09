@@ -88,6 +88,7 @@ char I2CWaitAck(void)
   SCL_0;
   return 1;
 }
+
 void I2CSendByte(unsigned char demand)
 {
   unsigned char i=8;
@@ -104,6 +105,8 @@ void I2CSendByte(unsigned char demand)
   }
   SCL_0;
 }
+
+//使能写入时间
 void WriteTimeOn(void)
 {
   IIC_START();
@@ -123,6 +126,8 @@ void WriteTimeOn(void)
 	I2CWaitAck();
 	IIC_STOP();
 }
+
+//关闭写入时间
 void WriteTimeOff(void)
 {		
 	IIC_START();
