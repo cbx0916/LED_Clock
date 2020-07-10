@@ -45,7 +45,7 @@ void main(void)
   }
 }
 
-
+//10½øÖÆ
 char bcd_decimal(unsigned char bcd)
 {
   return bcd-(bcd >> 4)*6;
