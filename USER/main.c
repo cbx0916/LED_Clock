@@ -33,7 +33,7 @@ void main(void)
   USART1_Init();
   SPI_595_Init();
   
-//  WriteTimeOn();//开启写时间
+//  WriteTimeOn();//开启写时间（非初始化不适用
 //  I2CWriteDate(time_now);//写入现在时间
 //  WriteTimeOff();//关闭写时间
   
